@@ -1,0 +1,15 @@
+#Run Prometheus exporter:
+cd prom_exporter
+python exporter.py
+
+
+curl http://localhost:9877
+
+
+
+4 type of prom metric:
+https://tomgregory.com/the-four-types-of-prometheus-metrics/
+
+
+
+- Refer  SummaryMetricFamily in   https://programtalk.com/vs4/python/vinklat/laporte/laporte/metrics/collector.py/

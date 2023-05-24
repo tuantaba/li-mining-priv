@@ -1,0 +1,6 @@
+#requests
+#mysql-connector
+mysql-connector-python
+mysql-connector-python-rf
+
+#https://stackoverflow.com/questions/50557234/authentication-plugin-caching-sha2-password-is-not-supported

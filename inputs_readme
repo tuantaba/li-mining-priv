@@ -1,0 +1,14 @@
+import sys, os, configparser
+import urllib
+
+config_path = os.path.join(sys.path[0],'config.ini')
+if not os.path.exists(config_path):
+    raise Exception("Config file not found: {}".format(config_path))
+
+config = configparser.RawConfigParser()
+config.optionxform = lambda option: option
+config.read(config_path)
+
+ENV = config.get('general', 'ENV')
+
+TELEGRAM_TOKEN = config.get('telegram', 'TELEGRAM_TOKEN')
